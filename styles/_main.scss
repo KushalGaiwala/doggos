@@ -1,0 +1,45 @@
+body {
+  padding: 0.5rem;
+  background: $bgColor;
+}
+
+.body-main {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: $textColor;
+  .heading {
+    font-size: 3rem;
+  }
+}
+
+.new-button {
+  padding: 0.5rem;
+  margin: 1rem 0;
+  color: $textColor;
+  background: $bgColor;
+  border-radius: 0;
+  border: 0.1rem solid $textColor;
+  &:hover {
+    background: $hoverColor;
+  }
+  &:active {
+    background: $textColor;
+    color: $primaryColor;
+    border-color: $hoverColor;
+  }
+}
+
+.image-gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  .image {
+    margin: 0.25rem;
+    height: 50vh;
+    width: auto;
+  }
+}
