@@ -14,7 +14,7 @@ const createNewImageElement = () => {
       const newImage = document.createElement("img");
       newImage.src = processedResponse.message;
       newImage.classList.add("image");
-      imageGallery.append(newImage);
+      imageGallery.insertBefore(newImage, imageGallery.firstChild);
     });
 };
 
